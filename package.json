@@ -1,0 +1,24 @@
+{
+  "name": "order-asset-presigned-uploads",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "setup": "tsx src/setup_storage.ts",
+    "dev": "tsx src/order_asset_server.ts",
+    "demo": "tsx scripts/run_order_flow.ts",
+    "test": "node --import tsx --test test/order_asset_policy.test.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

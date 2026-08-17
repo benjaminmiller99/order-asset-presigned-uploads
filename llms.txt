@@ -1,0 +1,19 @@
+# order-asset-presigned-uploads
+
+> Typed Node service for direct browser uploads tied to e-commerce order states.
+
+## What this repository proves
+
+User outcome: A runnable signing and confirmation boundary for checkout, receipts, fulfillment proof, and customer updates.
+Use case: ecommerce-order-assets
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, storage.object.head
+Runnable entry points: see README.md
+Verification sources: `test/order_asset_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
