@@ -72,9 +72,3 @@ Quick start is above. For a real deployment you'll also need: The details below 
 **Order Asset Presigned Uploads: Storage**
 - **Order Asset Presigned Uploads:** Create the bucket with the right ACL/region up front (`POST /v1/storage/bucket/create`); set CORS for browser uploads (`POST /v1/storage/bucket/set_cors`).
 - **Order Asset Presigned Uploads:** Presigned URLs expire — set the shortest workable lifetime. Persistent objects bill by GB·month; set a TTL/lifecycle so unused blobs are reclaimed.
-
-## Further reading
-
-- [Private User Files in Object Storage: Node.js SaaS Presigned Download Links](docs/private-user-files-in-object-storage-node-js-saas-u3015l.md)
-- [Marketplace Image Uploads in Node.js: Sharp Crops, Fixed Sizes, One Private Original](docs/marketplace-image-uploads-in-node-js-sharp-crops-8serph.md)
-- [S3 Receipt Retention: Object Storage Keys for WebP Sizes and Overwrite Safety](docs/s3-receipt-retention-object-storage-keys-for-webp-1sbo76.md)
